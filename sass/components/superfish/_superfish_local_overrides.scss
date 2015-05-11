@@ -1,0 +1,91 @@
+// Reset contextual link position sf-trigger.
+.block--superfish.contextual-links-region {
+  position: static;
+
+  @include breakpoint($bp-superfish-is-expanded) {
+    position: relative;
+  }
+}
+
+.block--superfish {
+  ul {
+    li {
+      font-weight: bold;
+      float: none;
+      @include inline-block;
+    }
+
+    ul {
+      .sf-sub-indicator {
+        top: 1em;
+      }
+    }
+  }
+
+  .block__content {
+    @include clearfix;
+
+    .sf-style-none {
+      float: right;
+    }
+  }
+
+  a.sf-depth-1 {
+    @include border-radius($border-radius);
+  }
+
+  // Accordian Styles
+  .sf-accordion-toggle {
+    display: block;
+  }
+
+  #superfish-1-toggle {
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    padding: .3em;
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    &:before {
+      @include font-size(2.3);
+    }
+  }
+
+  ul.sf-menu.sf-accordion,
+  ul.sf-menu.sf-accordion ul,
+  ul.sf-menu.sf-accordion li {
+    float: none;
+  }
+
+  .sf-expanded > .sf-accordion-button:before {
+    @include icon($fa-var-minus-square);
+  }
+  .sf-accordion-button {
+    line-height: 999px;
+    overflow: hidden;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    padding: 0 !important;
+
+
+    &:before {
+      line-height: normal;
+      display: block;
+      @include icon($fa-var-plus-square);
+      @include font-size(1.7);
+      width: 100%;
+      height: 100%;
+      @include display-flex;
+      @include align-items(center);
+      @include justify-content(center);
+    }
+  }
+
+  .sf-with-ul {
+    padding-left: 40px;
+  }
+}

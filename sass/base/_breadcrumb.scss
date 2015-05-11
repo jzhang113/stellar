@@ -1,0 +1,14 @@
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+
+  li {
+    list-style: none;
+    display: inline;
+  }
+
+  .breadcrumb-seperator {
+    margin: 0 .5em;
+  }
+}

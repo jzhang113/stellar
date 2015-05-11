@@ -1,0 +1,13 @@
+@mixin button($bg-color: $primary-link-color, $color: #fff) {
+  @include inline-block;
+  @include border-radius($border-radius);
+  @include text-shadow(1px 1px 1px darken($bg-color, 3));
+  background: $bg-color;
+  color: $color;
+  padding: .5em;
+  border: 1px solid darken($bg-color, 3);
+}
+
+.btn {
+  @include button;
+}

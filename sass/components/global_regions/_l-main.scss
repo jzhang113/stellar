@@ -1,0 +1,7 @@
+$l-main-bg-color: #fff;
+
+.l-main {
+  background:$l-main-bg-color;
+  border: 1px solid darken($l-main-bg-color, 10);
+  padding: 2rem 0;
+}

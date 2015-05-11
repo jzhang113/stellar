@@ -1,0 +1,36 @@
+name = Stellar
+description = Stellar SiteNow starterkit theme based on Omega.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/stellar.normalize.css
+stylesheets[all][] = css/stellar.hacks.css
+stylesheets[all][] = css/stellar.styles.css
+stylesheets[all][] = css/stellar.no-query.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/stellar.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer
+
+; ========================================
+; Layouts
+; ========================================
+plugins[panels][layouts] = layouts/panel_layouts

@@ -1,0 +1,40 @@
+%input-base {
+  @include border-radius($border-radius);
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+label {
+  margin-bottom: 0.2rem;
+}
+
+input {
+  max-width: 100%;
+
+  &[type="text"],
+  &[type="email"] {
+    @extend %input-base;
+  }
+}
+
+textarea {
+  @extend %input-base;
+}
+
+html.js {
+  .form-autocomplete {
+    background-image: none;
+  }
+  .throbbing {
+    background-image: url('../images/system/ajax-loader.gif');
+    background-position: 95% 50%;
+  }
+}
+.ajax-progress .throbber {
+  background: transparent url('../images/system/ajax-loader.gif') no-repeat 0px 0px;
+  @include inline-block;
+  vertical-align: bottom;
+  height: 12px; /* tweak this according to your gif */
+  width: 15px; /* tweak this according to your gif */
+  margin-left: 10px;
+}

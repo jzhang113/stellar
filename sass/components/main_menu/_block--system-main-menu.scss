@@ -1,0 +1,31 @@
+.block--system-main-menu {
+
+  a {
+    color: $main-menu-anchor-color;
+  }
+
+  h2 {
+    margin: 0;
+    display: none;
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+
+    ul {
+      display: none;
+    }
+
+    li {
+      list-style: none;
+      @include inline-block;
+    }
+
+    a {
+      @include inline-block;
+      padding: 0 1rem;
+      text-decoration: none;
+    }
+  }
+}

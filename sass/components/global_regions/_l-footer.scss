@@ -1,0 +1,17 @@
+$l-footer-bg-color: #222;
+
+.l-footer {
+  @include box-shadow(4px -5px 20px rgba(0,0,0,0.2));
+  background: $l-footer-bg-color;
+  border: 1px solid darken($l-footer-bg-color, 3);
+  padding: 2rem 0;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  input {
+    color: $base-font-color;
+  }
+}

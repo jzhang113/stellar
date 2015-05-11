@@ -1,0 +1,23 @@
+$title-bar-bg-color: #222;
+
+.l-title-bar {
+  @include box-shadow(0px -5px 5px rgba(0,0,0,.1) inset);
+  background-color: $title-bar-bg-color;
+  border: 1px solid darken($title-bar-bg-color, 3);
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  a {
+    color: $color-gold;
+  }
+
+  .page-title {
+    @include font-size(2.5);
+    margin: 0;
+  }
+
+  .breadcrumb a {
+    font-weight: bold;
+  }
+}

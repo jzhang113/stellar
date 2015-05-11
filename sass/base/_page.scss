@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6em;
+  color: $base-font-color;
+  background: $color-warm-linen;
+  @extend %font-smoothing;
+}
+
+.l-container {
+  max-width: $page-max-width;
+  margin: 0 auto;
+}
+
+.site-name {
+  margin: 0;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.element-invisible {
+  @include element-invisible;
+}

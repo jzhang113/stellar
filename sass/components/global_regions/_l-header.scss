@@ -1,0 +1,65 @@
+.l-header {
+  @include display-flex;
+  @include align-items(center);
+  @include justify-content(center);
+  @include transition(min-height .2s ease-out);
+  text-align: center;
+  border-bottom: 6px solid $color-gold;
+  min-height: 0;
+  overflow: hidden;
+
+  @include breakpoint($bp-pull-top-offset) {
+    @include transition(min-height 0.5s ease-out);
+    padding: 2rem 0;
+    padding-bottom: $pull-top-offset + 20px;
+    min-height: 350px;
+  }
+
+  .bg-image {
+    @extend %absolute-fill;
+    @include transition(background-position .3s);
+    @include box-shadow(0px -15px 15px -10px rgba(0,0,0,0.2) inset);
+    background-color: #333;
+    background-size: 100% auto;
+    background-position: 100% 0px;
+
+    @include breakpoint(1300px) {
+      // Move the image position when the viewport scales.
+      background-position: 0px -100px;
+
+      .logged-in & {
+        // Account for background-position if we are logged-in.
+        background-position: 0px (-100px + $toolbar-offset);
+
+        .logged-in.toolbar-drawer & {
+          // Account for background-position if we are logged-in and the toolbar-drawer is exposed.
+          background-position: 0px (-100px + $toolbar-drawer-offset);
+        }
+      }
+    }
+
+    @include breakpoint(1700px) {
+      // Move the image position when the viewport scales.
+      background-position: 0px -200px;
+
+      .logged-in & {
+        // Account for background-position if we are logged-in.
+        background-position: 0px (-200px + $toolbar-offset);
+
+        .logged-in.toolbar-drawer & {
+          // Account for background-position if we are logged-in and the toolbar-drawer is exposed.
+          background-position: 0px (-200px + $toolbar-drawer-offset);
+        }
+      }
+    }
+  }
+
+  .block {
+    padding: 2rem;
+  }
+
+  .l-container {
+    position: relative;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,53 @@
+/**
+ * @file
+ * OA Melon panel layout
+**/
+
+.melon-container,
+.melon-content-header {
+  margin-bottom: 1em;
+}
+
+.melon-column {
+  width: 31.915%;
+  float: left;
+}
+
+  .melon-column-inner {
+    margin-right: 20px;
+  }
+
+  .melon-content-column2-inner,
+  .melon-sidebar-inner {
+    margin-right: 0;
+  }
+  
+.melon-content-container { /* This is floated to the left of the sidebar,
+  which is styled by the generic "melon-column" class */
+  float: left;
+  width: 68.085%;
+}
+
+  .melon-content-column1 {
+    width: 51.613%;
+  }
+  
+  .melon-content-column2 {
+    width: 48.387%;
+  }
+  
+/* iPhone [portrait + landscape] */
+@media only screen and (max-width: 480px) {
+  .melon-column,
+  .melon-content-container,
+  .melon-content-column1,
+  .melon-content-column2 {
+    width: 100%;
+    float: none;
+  }
+  
+  .melon-column-inner,
+  .melon-content-container-inner {
+    margin-right: 0;
+  }
+}

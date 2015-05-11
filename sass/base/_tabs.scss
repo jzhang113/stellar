@@ -1,0 +1,58 @@
+%active-tab {
+  background: $primary-link-color;
+  color: #fff;
+  border-color: darken($primary-link-color, 3);
+  pointer-events: none;
+  cursor: default;
+}
+
+.tabs {
+  border-bottom: 2px solid $primary-link-color;
+
+  li {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-left: .6em;
+    }
+  }
+
+  a {
+    display: block;
+    color: $base-font-color;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 0.3em 0.8em;
+
+    &.active {
+      @extend %active-tab;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+      background: #333;
+      border-color: darken(#333, 3);
+    }
+  }
+
+  // Look for tabs that have just an inline class and style.
+  &.inline {
+    @include clearfix;
+    padding: 0;
+
+    li {
+      float: left;
+      list-style: none;
+    }
+
+    li.active > a {
+      @extend %active-tab;
+    }
+  }
+}
+
+

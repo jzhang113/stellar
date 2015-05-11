@@ -1,0 +1,21 @@
+.l-main-container {
+  @include transition(transform .2s ease-out);
+  @include backface-visibility(hidden);
+  @include perspective(1000);
+  @include transform(translate3d(0, 0, 0));
+  position: relative;
+
+  > div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include breakpoint($bp-pull-top-offset) {
+    @include transform(translate3d(0, -($pull-top-offset), 0));
+    @include transition(transform 0.3s);
+    @include transition-delay(0.5s);
+    @include transition-timing-function(cubic-bezier(0.000, -0.600, 0.645, 1.455));
+    @include box-shadow(0px 0px 10px rgba(0,0,0,0.1));
+    margin-bottom: -($pull-top-offset);
+  }
+}

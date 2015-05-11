@@ -1,0 +1,306 @@
+
+// You can add these variables to your _base.scss
+$superfish-1-color: inherit;
+$superfish-1-background-color-level-first: transparent;
+$superfish-1-background-color-level-second: #333;
+$superfish-1-background-color-level-third: darken(#333, 8);
+$superfish-1-background-color-level-fourth: darken(#333, 12);
+$superfish-1-background-color-hover: $primary-link-color;
+$superfish-1-background-color-active: lighten(#333, 7);
+$superfish-hover-text-color: #fff;
+$superfish-1-text-color-active: #333;
+$superfish-1-bg-color-active: #e1e1e1;
+$hover-top: 66px; // Set the position of the top dropdown
+
+// Font Awesome variables
+$fa-icon: true; // Use fa icons instead of default
+$fa-icon-down-positon: -1px; // Relatively position arrow right
+$fa-icon-right-positon: 0px; // Relatively position arrow down
+
+// Override see https://www.drupal.org/node/1452072 #5
+.sf-menu li ul { overflow: visible !important; }
+
+.block--superfish {
+
+  .block__title {
+    @include element-invisible;
+  }
+
+  .sf-style-none {
+    float: left;
+    margin: 0;
+    padding: 0;
+    &.sf-navbar {
+      width: 100%;
+      background: $superfish-1-background-color-level-first;
+    }
+    ul {
+      padding-left: 0;
+      &.sf-megamenu li {
+        &.sf-megamenu-wrapper {
+          background: $superfish-1-background-color-level-fourth;
+          li {
+            background: transparent;
+          }
+        }
+      }
+    }
+    a {
+      color: $superfish-1-color;
+      padding: 0.75em 1em;
+      &.sf-with-ul {
+        padding-right: 2.25em;
+      }
+      &:focus {
+        background: $superfish-1-background-color-hover;
+        outline: 0;
+        color: $superfish-hover-text-color;
+      }
+      &:hover {
+        background: $superfish-1-background-color-hover;
+        outline: 0;
+        color: $superfish-hover-text-color;
+      }
+      &:active {
+        background: $superfish-1-background-color-hover;
+        outline: 0;
+        color: $superfish-hover-text-color;
+      }
+    }
+    span {
+      &.nolink {
+        color: $superfish-1-color;
+        padding: 0.75em 1em;
+        &.sf-with-ul {
+          padding-right: 2.25em;
+        }
+        &:hover {
+          background: $superfish-1-background-color-level-fourth;
+          outline: 0;
+        }
+      }
+      &.sf-description {
+        color: $superfish-1-color;
+        display: block;
+        font-size: 0.833em;
+        line-height: 1.5;
+        margin: 5px 0 0 5px;
+        padding: 0;
+      }
+    }
+    &.rtl {
+      span {
+        &.sf-description {
+          margin: 5px 5px 0 0;
+        }
+        &.nolink.sf-with-ul {
+          padding-left: 2.25em;
+          padding-right: 1em;
+        }
+      }
+      a.sf-with-ul {
+        padding-left: 2.25em;
+        padding-right: 1em;
+      }
+    }
+    li {
+      background: $superfish-1-background-color-level-first;
+      li {
+        background: $superfish-1-background-color-level-second;
+        li {
+          background: $superfish-1-background-color-level-third;
+          li {
+            background: $superfish-1-background-color-level-fourth;
+          }
+        }
+      }
+      &:hover,
+      &.sfHover {
+        background: $superfish-1-background-color-active;
+        outline: 0;
+        a.active {
+          color: $superfish-1-text-color-active;
+          background: $superfish-1-bg-color-active;
+        }
+        > ul {
+          top: $hover-top;
+          ul {
+            top: 0;
+          }
+        }
+      }
+    }
+
+    @if $fa-icon == true {
+      .sf-sub-indicator {
+        background-image: none;
+        height: 15px;
+        text-align: center;
+
+        &:before {
+          @include icon($fa-var-caret-right);
+          text-indent: 0;
+          display: block !important;
+          position: relative;
+          top: $fa-icon-right-positon;
+        }
+      }
+
+      .sf-depth-1 > .sf-sub-indicator:before {
+        @include icon($fa-var-caret-down);
+        top: $fa-icon-down-positon;
+      }
+    }
+  }
+  div.sf-accordion-toggle {
+    &.sf-style-none a {
+      background: $superfish-1-background-color-level-first;
+      color: $superfish-1-color;
+      padding: 1em;
+      &:before {
+        @include icon($fa-var-bars);
+      }
+      &.sf-expanded {
+        font-weight: bold;
+
+        &:before {
+          @include icon($fa-var-times);
+        }
+      }
+    }
+    span {
+      @include element-invisible;
+    }
+  }
+  .sf-menu.sf-style-none {
+    &.rtl {
+      &.sf-accordion li {
+        li {
+          a {
+            padding-left: auto;
+            padding-right: 2em;
+          }
+          li {
+            a {
+              padding-left: auto;
+              padding-right: 3em;
+            }
+            li {
+              a {
+                padding-left: auto;
+                padding-right: 4em;
+              }
+              li {
+                a {
+                  padding-left: auto;
+                  padding-right: 5em;
+                }
+                span.nolink {
+                  padding-left: auto;
+                  padding-right: 5em;
+                }
+              }
+              span.nolink {
+                padding-left: auto;
+                padding-right: 4em;
+              }
+            }
+            span.nolink {
+              padding-left: auto;
+              padding-right: 3em;
+            }
+          }
+          span.nolink {
+            padding-left: auto;
+            padding-right: 2em;
+          }
+        }
+      }
+      ul.sf-megamenu {
+        li.sf-megamenu-wrapper {
+          ol li {
+            &.sf-megamenu-column {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &.sf-accordion li {
+      &.sf-expanded {
+        background-color: $superfish-1-background-color-level-fourth;
+        > {
+          a {
+            font-weight: bold;
+          }
+          span.nolink {
+            font-weight: bold;
+          }
+        }
+      }
+      li {
+        a {
+          padding-left: 2em;
+        }
+        li {
+          a {
+            padding-left: 3em;
+          }
+          li {
+            a {
+              padding-left: 4em;
+            }
+            li {
+              a {
+                padding-left: 5em;
+              }
+              span.nolink {
+                padding-left: 5em;
+              }
+            }
+            span.nolink {
+              padding-left: 4em;
+            }
+          }
+          span.nolink {
+            padding-left: 3em;
+          }
+        }
+        span.nolink {
+          padding-left: 2em;
+        }
+      }
+      a.sf-accordion-button {
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 499;
+      }
+    }
+    ul.sf-megamenu {
+      li.sf-megamenu-wrapper {
+        ol {
+          margin: 0;
+          padding: 0;
+          li {
+            margin: 0;
+            padding: 0;
+            &.sf-megamenu-column {
+              display: inline;
+              float: left;
+            }
+          }
+        }
+        a.menuparent {
+          font-weight: bold;
+        }
+        span.nolink {
+          &.menuparent {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

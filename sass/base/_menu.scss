@@ -1,0 +1,34 @@
+%menu-vertical {
+  li,
+  .leaf,
+  .expanded,
+  .collapsed {
+    list-style: none;
+
+    &:before {
+      color: $primary-link-color;
+      margin-right: .4em;
+    }
+
+    &.active:before {
+      color: #666;
+    }
+  }
+
+  .collapsed:before {
+    @include icon($fa-var-caret-right);
+  }
+
+  .expanded:before {
+    @include icon($fa-var-caret-down);
+  }
+}
+
+.menu {
+  padding: 0;
+
+  .l-main & {
+    @extend %menu-vertical;
+  }
+}
+

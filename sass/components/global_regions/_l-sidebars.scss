@@ -1,0 +1,11 @@
+
+.l-region--sidebar {
+  @include border-radius($border-radius);
+  background: $sidebar-bg-color;
+  border: 1px solid darken($sidebar-bg-color, 3);
+  padding: 2rem;
+
+  h2 {
+    @include font-size(1.5);
+  }
+}

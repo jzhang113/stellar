@@ -1,0 +1,27 @@
+.overlay {
+  position: relative;
+
+  &:before {
+    @extend %absolute-fill;
+    background-color: rgba(0,0,0,0.15);
+  }
+
+  // Darkness abstractions.
+  @for $i from 1 through 10 {
+    &.opacity-#{$i}:before {
+      @include opacity($i/10);
+    }
+  }
+}
+
+.pattern {
+  position: relative;
+
+  &:after {
+    @extend %absolute-fill;
+    @include opacity(.4);
+    background-image: url('../images/patterns/dark_grid_dots.png');
+    background-repeat: repeat;
+  }
+}
+
