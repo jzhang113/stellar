@@ -35,10 +35,3 @@ function stellar_breadcrumb(&$variables) {
     return $output;
   }
 }
-
-/**
- * Implements hook_html_head_alter().
- */
-function stellar_html_head_alter(&$head_elements) {
-  $head_elements['omega-viewport']['#attributes']['content'] = 'width=device-width, initial-scale=1.0';
-}

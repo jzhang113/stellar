@@ -5,8 +5,12 @@
  */
 function stellar_preprocess_page(&$variables) {
   // Set the sidebar position.
-  // Todo: allow this to be user configured.
-  $sidebar_pos = 'second';
+  if (omega_extension_enabled('layouts')) {
+    $sidebar_pos = omega_theme_get_setting('omega_sidebar');
+  }
+  else {
+    $sidebar_pos = 'second';
+  }
 
   // Add a grid def. for the main-content region.
   if (!empty($variables['page']['sidebar']) && $sidebar_pos === 'first') {
