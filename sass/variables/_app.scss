@@ -1,0 +1,44 @@
+// Base Colors.
+$color-gold: #ffd220;
+$color-dimgray: #615e56;
+$color-warm-linen: #f8f2e1;
+
+// Functional Colors.
+$base-font-color: #414141;
+$primary-link-color: #3273B8;
+$link-hover-color: #666;
+$l-navigation-bg-color: #222222;
+$main-menu-anchor-color: #FFFFFF;
+$sidebar-bg-color: #f5f5f5;
+$sidebar-border-color: #efefef;
+
+// Measurements.
+$border-radius: 3px;
+$pull-top-offset: 120px;
+$toolbar-offset: 30px;
+$toolbar-drawer-offset: 60px;
+
+// Layouts and breakpoints.
+$page-max-width: 1140px;
+$bp-pull-top-offset: $page-max-width + 40px;
+$bp-superfish-is-expanded: 768px;
+
+// Overlay.
+$overlay-opacity-default: 0.6;  // Sets the defualt opacity for overlays.
+
+// Superfish menu styles.
+$superfish-1-color: inherit;
+$superfish-1-background-color-level-first: transparent;
+$superfish-1-background-color-level-second: #333;
+$superfish-1-background-color-level-third: darken(#333, 8);
+$superfish-1-background-color-level-fourth: darken(#333, 12);
+$superfish-1-background-color-hover: $primary-link-color;
+$superfish-1-background-color-active: lighten(#333, 7);
+$superfish-hover-text-color: #fff;
+$superfish-1-text-color-active: #333;
+$superfish-1-bg-color-active: #e1e1e1;
+$hover-top: 66px; // Set the position of the top dropdown
+// Font Awesome variables
+$fa-icon: true; // Use fa icons instead of default
+$fa-icon-down-positon: -1px; // Relatively position arrow right
+$fa-icon-right-positon: 0px; // Relatively position arrow down

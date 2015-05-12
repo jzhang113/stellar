@@ -1,22 +1,3 @@
-
-// You can add these variables to your _base.scss
-$superfish-1-color: inherit;
-$superfish-1-background-color-level-first: transparent;
-$superfish-1-background-color-level-second: #333;
-$superfish-1-background-color-level-third: darken(#333, 8);
-$superfish-1-background-color-level-fourth: darken(#333, 12);
-$superfish-1-background-color-hover: $primary-link-color;
-$superfish-1-background-color-active: lighten(#333, 7);
-$superfish-hover-text-color: #fff;
-$superfish-1-text-color-active: #333;
-$superfish-1-bg-color-active: #e1e1e1;
-$hover-top: 66px; // Set the position of the top dropdown
-
-// Font Awesome variables
-$fa-icon: true; // Use fa icons instead of default
-$fa-icon-down-positon: -1px; // Relatively position arrow right
-$fa-icon-right-positon: 0px; // Relatively position arrow down
-
 // Override see https://www.drupal.org/node/1452072 #5
 .sf-menu li ul { overflow: visible !important; }
 
