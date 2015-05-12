@@ -3294,6 +3294,10 @@ iframe {
 .menu {
   padding: 0; }
 
+/* line 1, ../sass/base/_messages.scss */
+.messages {
+  margin-bottom: 1em; }
+
 /* line 1, ../sass/base/_overlay.scss */
 .overlay {
   position: relative; }
