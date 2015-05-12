@@ -3666,31 +3666,32 @@ a {
       min-height: 70px; } }
   /* line 26, ../sass/components/global_regions/_l-navigation.scss */
   .l-navigation .l-branding {
-    -webkit-flex: 300px 1 1;
-    flex: 300px 1 1;
+    -webkit-flex: 320px 1 1;
+    flex: 320px 1 1;
     padding-left: 2rem;
-    padding-right: 6.5rem; }
+    padding-right: 6.5rem;
+    max-width: 500px; }
+    @media (min-width: 768px) {
+      /* line 26, ../sass/components/global_regions/_l-navigation.scss */
+      .l-navigation .l-branding {
+        padding-right: 0; } }
     @media (min-width: 1140px) {
       /* line 26, ../sass/components/global_regions/_l-navigation.scss */
       .l-navigation .l-branding {
         padding: 0; } }
-    /* line 35, ../sass/components/global_regions/_l-navigation.scss */
+    /* line 40, ../sass/components/global_regions/_l-navigation.scss */
     .l-navigation .l-branding .site-logo {
       display: block;
       line-height: 0; }
-      /* line 39, ../sass/components/global_regions/_l-navigation.scss */
+      /* line 44, ../sass/components/global_regions/_l-navigation.scss */
       .l-navigation .l-branding .site-logo img {
         max-height: 70px; }
-        @media (min-width: 768px) {
-          /* line 39, ../sass/components/global_regions/_l-navigation.scss */
-          .l-navigation .l-branding .site-logo img {
-            max-width: 300px; } }
-    /* line 48, ../sass/components/global_regions/_l-navigation.scss */
+    /* line 49, ../sass/components/global_regions/_l-navigation.scss */
     .l-navigation .l-branding .site-name {
       font-size: 32px;
       font-size: 3.2rem;
       letter-spacing: -0.03em; }
-      /* line 52, ../sass/components/global_regions/_l-navigation.scss */
+      /* line 53, ../sass/components/global_regions/_l-navigation.scss */
       .l-navigation .l-branding .site-name a {
         display: inline-block;
         vertical-align: middle;
@@ -3698,20 +3699,20 @@ a {
         *zoom: 1;
         *display: inline;
         color: #ffd220; }
-      /* line 57, ../sass/components/global_regions/_l-navigation.scss */
+      /* line 58, ../sass/components/global_regions/_l-navigation.scss */
       .l-navigation .l-branding .site-name small {
         font-size: 55%;
         position: relative;
         top: -3px; }
-    /* line 64, ../sass/components/global_regions/_l-navigation.scss */
+    /* line 65, ../sass/components/global_regions/_l-navigation.scss */
     .l-navigation .l-branding .site-slogan {
       font-size: 17px;
       font-size: 1.7rem;
       margin-bottom: 0; }
-  /* line 70, ../sass/components/global_regions/_l-navigation.scss */
+  /* line 71, ../sass/components/global_regions/_l-navigation.scss */
   .l-navigation .l-region--navigation {
-    -webkit-flex: 800px 1 1;
-    flex: 800px 1 1; }
+    -webkit-flex: 500px 2 3;
+    flex: 500px 2 3; }
 
 /* line 2, ../sass/components/global_regions/_l-sidebars.scss */
 .l-region--sidebar {
@@ -4076,23 +4077,30 @@ a {
 /* line 19, ../sass/components/superfish/_superfish_local_overrides.scss */
 .block--superfish ul ul .sf-sub-indicator {
   top: 1em; }
+@media (min-width: 768px) {
+  /* line 25, ../sass/components/superfish/_superfish_local_overrides.scss */
+  .block--superfish .sf-main-menu {
+    text-align: right; }
+    /* line 28, ../sass/components/superfish/_superfish_local_overrides.scss */
+    .block--superfish .sf-main-menu li {
+      text-align: left; } }
 /* line 13, ../../../../../../../../../../Users/ajdelaney/.rvm/gems/ruby-2.2.2@omega.stellar/gems/toolkit-2.9.0/stylesheets/toolkit/_clearfix.scss */
 .block--superfish .block__content:after {
   content: "";
   display: table;
   clear: both; }
-/* line 28, ../sass/components/superfish/_superfish_local_overrides.scss */
+/* line 37, ../sass/components/superfish/_superfish_local_overrides.scss */
 .block--superfish .block__content .sf-style-none {
   float: right; }
-/* line 33, ../sass/components/superfish/_superfish_local_overrides.scss */
+/* line 42, ../sass/components/superfish/_superfish_local_overrides.scss */
 .block--superfish a.sf-depth-1 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
-/* line 38, ../sass/components/superfish/_superfish_local_overrides.scss */
+/* line 47, ../sass/components/superfish/_superfish_local_overrides.scss */
 .block--superfish .sf-accordion-toggle {
   display: block; }
-/* line 42, ../sass/components/superfish/_superfish_local_overrides.scss */
+/* line 51, ../sass/components/superfish/_superfish_local_overrides.scss */
 .block--superfish #superfish-1-toggle {
   text-align: center;
   color: #fff;
@@ -4102,16 +4110,16 @@ a {
   position: absolute;
   top: 2rem;
   right: 2rem; }
-  /* line 52, ../sass/components/superfish/_superfish_local_overrides.scss */
+  /* line 61, ../sass/components/superfish/_superfish_local_overrides.scss */
   .block--superfish #superfish-1-toggle:before {
     font-size: 23px;
     font-size: 2.3rem; }
-/* line 57, ../sass/components/superfish/_superfish_local_overrides.scss */
+/* line 66, ../sass/components/superfish/_superfish_local_overrides.scss */
 .block--superfish ul.sf-menu.sf-accordion,
 .block--superfish ul.sf-menu.sf-accordion ul,
 .block--superfish ul.sf-menu.sf-accordion li {
   float: none; }
-/* line 63, ../sass/components/superfish/_superfish_local_overrides.scss */
+/* line 72, ../sass/components/superfish/_superfish_local_overrides.scss */
 .block--superfish .sf-expanded > .sf-accordion-button:before {
   content: "";
   display: inline-block;
@@ -4121,7 +4129,7 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0); }
-/* line 66, ../sass/components/superfish/_superfish_local_overrides.scss */
+/* line 75, ../sass/components/superfish/_superfish_local_overrides.scss */
 .block--superfish .sf-accordion-button {
   line-height: 999px;
   overflow: hidden;
@@ -4129,7 +4137,7 @@ a {
   width: 36px;
   text-align: center;
   padding: 0 !important; }
-  /* line 75, ../sass/components/superfish/_superfish_local_overrides.scss */
+  /* line 84, ../sass/components/superfish/_superfish_local_overrides.scss */
   .block--superfish .sf-accordion-button:before {
     line-height: normal;
     display: block;
@@ -4151,7 +4159,7 @@ a {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center; }
-/* line 88, ../sass/components/superfish/_superfish_local_overrides.scss */
+/* line 97, ../sass/components/superfish/_superfish_local_overrides.scss */
 .block--superfish .sf-with-ul {
   padding-left: 40px; }
 

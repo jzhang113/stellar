@@ -22,6 +22,15 @@
     }
   }
 
+  .sf-main-menu {
+    @include breakpoint($bp-superfish-is-expanded) {
+      text-align: right;
+      li {
+        text-align: left;
+      }
+    }
+  }
+
   .block__content {
     @include clearfix;
 

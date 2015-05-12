@@ -24,9 +24,14 @@ $bp-menu-is-floated: $bp-superfish-is-expanded;
   }
 
   .l-branding {
-    @include flex(300px 1 1);
+    @include flex(320px 1 1);
     padding-left: 2rem;
     padding-right: 6.5rem;
+    max-width: 500px;
+
+    @include breakpoint($bp-superfish-is-expanded) {
+      padding-right: 0;
+    }
 
     @include breakpoint($page-max-width) {
       padding: 0;
@@ -38,10 +43,6 @@ $bp-menu-is-floated: $bp-superfish-is-expanded;
 
       img {
         max-height: 70px;
-
-        @include breakpoint($bp-superfish-is-expanded) {
-          max-width: 300px;
-        }
       }
     }
 
@@ -68,6 +69,6 @@ $bp-menu-is-floated: $bp-superfish-is-expanded;
   }
 
   .l-region--navigation {
-    @include flex(800px 1 1);
+    @include flex(500px 2 3);
   }
 }
