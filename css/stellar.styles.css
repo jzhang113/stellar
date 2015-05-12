@@ -3235,17 +3235,14 @@ html.js .throbbing {
     clear: none;
     overflow: visible !important; } }
 
-/* line 1, ../sass/base/_lists.scss */
-ul {
-  padding: 0; }
-  /* line 4, ../sass/base/_lists.scss */
-  ul li {
-    margin-bottom: 0.5rem; }
-  /* line 8, ../sass/base/_lists.scss */
-  ul ul {
-    margin-left: 1em;
-    margin-top: 0.5rem;
-    margin-bottom: 0; }
+/* line 2, ../sass/base/_lists.scss */
+ul li {
+  margin-bottom: 0.5rem; }
+/* line 6, ../sass/base/_lists.scss */
+ul ul {
+  margin-left: 1em;
+  margin-top: 0.5rem;
+  margin-bottom: 0; }
 
 /* line 1, ../sass/base/_media.scss */
 img,
