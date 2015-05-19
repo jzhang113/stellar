@@ -17,5 +17,10 @@
     @include transition-timing-function(cubic-bezier(0.000, -0.600, 0.645, 1.455));
     @include box-shadow(0px 0px 10px rgba(0,0,0,0.1));
     margin-bottom: -($pull-top-offset);
+
+    // We use negative margin fallback if transform3d is not supported.
+    .no-csstransforms3d {
+      margin-top: -($pull-top-offset);
+    }
   }
 }
