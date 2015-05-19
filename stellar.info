@@ -17,7 +17,7 @@ stylesheets[all][] = css/stellar.no-query.css
 ; Scripts
 ; ========================================
 scripts[] = libraries/modernizr/modernizr.custom.min.js
-scripts[] = libraries/rem.min.js
+scripts[] = libraries/rem/rem.min.js
 
 ; ========================================
 ; Regions
