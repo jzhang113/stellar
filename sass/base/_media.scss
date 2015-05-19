@@ -3,3 +3,18 @@ media,
 iframe {
   max-width: 100%;
 }
+
+.media-youtube-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+iframe.media-youtube-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
