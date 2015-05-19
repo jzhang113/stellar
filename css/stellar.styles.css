@@ -3649,7 +3649,7 @@ a {
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       margin-bottom: -120px; }
       /* line 22, ../sass/components/global_regions/_l-main-container.scss */
-      .l-main-container .no-csstransforms3d {
+      .no-csstransforms3d .l-main-container {
         margin-top: -120px; } }
 
 /* line 3, ../sass/components/global_regions/_l-main.scss */
