@@ -3650,7 +3650,8 @@ a {
       margin-bottom: -120px; }
       /* line 22, ../sass/components/global_regions/_l-main-container.scss */
       .no-csstransforms3d .l-main-container {
-        margin-top: -120px; } }
+        margin-top: -120px;
+        margin-bottom: 0; } }
 
 /* line 3, ../sass/components/global_regions/_l-main.scss */
 .l-main {

@@ -21,6 +21,7 @@
     // We use negative margin fallback if transform3d is not supported.
     .no-csstransforms3d & {
       margin-top: -($pull-top-offset);
+      margin-bottom: 0;
     }
   }
 }
