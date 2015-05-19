@@ -27,7 +27,8 @@
 .menu {
   padding: 0;
 
-  .l-main & {
+  .l-main &,
+  .l-footer & {
     @extend %menu-vertical;
   }
 }
