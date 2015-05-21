@@ -22,7 +22,7 @@ function stellar_preprocess_page(&$variables) {
     $variables['page']['sidebar']['#wrapper_classes'][] =  'span4-9';
   }
 
-  // Create classes for the header region.
+  // Create attributes for the header region.
   $variables['page']['header']['classes_array'][] = 'l-header';
   $variables['page']['header']['classes_array'][] = 'pattern';
   $variables['page']['header']['attributes_array']['role'] = 'banner';
