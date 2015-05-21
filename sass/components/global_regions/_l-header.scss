@@ -7,21 +7,23 @@
   border-bottom: 6px solid $color-gold;
   min-height: 0;
   overflow: hidden;
+  background-color: #333;
 
   @include breakpoint($bp-pull-top-offset) {
     @include transition(min-height 0.5s ease-out);
     padding: 2rem 0;
     padding-bottom: $pull-top-offset + 20px;
-    min-height: 350px;
   }
 
-  .bg-image {
-    @extend %absolute-fill;
+  &.bg-image {
     @include transition(background-position .3s);
     @include box-shadow(0px -15px 15px -10px rgba(0,0,0,0.2) inset);
-    background-color: #333;
     background-size: 100% auto;
     background-position: 100% 0px;
+
+    @include breakpoint($bp-pull-top-offset) {
+      min-height: 350px;
+    }
 
     @include breakpoint(1300px) {
       // Move the image position when the viewport scales.

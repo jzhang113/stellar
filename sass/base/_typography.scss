@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin: 0 0 .5em;
+  margin: 0 0 0.8rem;
 }
 
 h1, .h1 { @include font-size(3.2); }
@@ -11,7 +11,7 @@ h6, .h6 { @include font-size(1.8); }
 
 p, ol, ul, blockquote, pre, code {
   line-height: 1.6;
-  margin: 0 0 1em;
+  margin: 0 0 1.6rem;
 }
 
 p {}
@@ -22,9 +22,10 @@ pre, code { }
 small { }
 
 a {
+  @include transition(all .3s ease-out);
   text-decoration: none;
   color: $primary-link-color;
-  @include transition(all .3s ease-out);
+
 
   &:hover,
   &:focus,

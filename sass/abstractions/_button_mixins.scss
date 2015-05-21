@@ -4,7 +4,7 @@
   @include text-shadow(1px 1px 1px darken($bg-color, 3));
   background: $bg-color;
   color: $color;
-  padding: .5em;
+  padding: 0.8rem;
   border: 1px solid darken($bg-color, 3);
 }
 

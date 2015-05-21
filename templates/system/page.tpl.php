@@ -98,8 +98,7 @@
     </div>
   </div>
 
-  <header class="l-header pattern" role="banner">
-    <div class="bg-image"></div>
+  <header <?php print $header_attributes; ?>>
     <div class="l-container">
       <?php print render($page['header']); ?>
     </div>

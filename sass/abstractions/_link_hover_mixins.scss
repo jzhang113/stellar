@@ -1,0 +1,43 @@
+@mixin lh-bracket-out {
+  &:before,
+  &:after {
+    @include opacity(0);
+    @include inline-block;
+    @include transition(transform 0.3s, opacity 0.2s);
+    position: relative;
+    top: -1px;
+  }
+
+  &:before {
+    @include transform(translateX(20px));
+    content: "[";
+    margin-left: -4px;
+  }
+
+  &:after {
+    @include transform(translateX(-20px));
+    content: "]";
+    margin-right: -4px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    &:before,
+    &:after {
+      @include opacity(1);
+    }
+
+    &:before {
+      content: "[";
+      @include transform(translateX(-2px));
+    }
+
+    &:after {
+      content: "]";
+      @include transform(translateX(2px));
+    }
+  }
+}
+

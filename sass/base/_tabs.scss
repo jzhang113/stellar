@@ -24,7 +24,7 @@
     border-top: 1px solid #ddd;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
-    padding: 0.3em 0.8em;
+    padding: 0.4rem 1rem;
 
     &.active {
       @extend %active-tab;
