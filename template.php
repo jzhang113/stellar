@@ -35,3 +35,42 @@ function stellar_breadcrumb(&$variables) {
     return $output;
   }
 }
+
+/**
+ * Implements hook_omega_theme_libraries_info().
+ */
+function stellar_omega_theme_libraries_info() {
+  $libraries['rem'] = array(
+    'name' => t('REM unit polyfill'),
+    'description' => t('A polyfill to parse CSS links and rewrite pixel equivalents into head for non supporting browsers.'),
+    'vendor' => 'Chuck Carpenter',
+    'vendor url' => 'http://chuckcarpenter.github.io/REM-unit-polyfill/',
+    'package' => t('Polyfills'),
+    'files' => array(
+      'js' => array(
+        'rem.min.js' => array(
+          'browsers' => array('IE' => '(gte IE 6)&(lte IE 8)', '!IE' => FALSE),
+          'weight' => 110,
+          'every_page' => TRUE,
+        ),
+      ),
+    ),
+    'variants' => array(
+      'source' => array(
+        'name' => t('Source'),
+        'description' => t('During development it might be useful to include the source files instead of the minified version.'),
+        'files' => array(
+          'js' => array(
+            'rem.js' => array(
+              'browsers' => array('IE' => '(gte IE 6)&(lte IE 8)', '!IE' => FALSE),
+              'weight' => 110,
+              'every_page' => TRUE,
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+
+  return $libraries;
+}
