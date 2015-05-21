@@ -90,4 +90,4 @@ settings[typekit_id] = ""
 settings[typekit_class] = ""
 settings[omega_google_fonts] = 1
 settings[google_font_import] = @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
-settings[google_font_css] = font-family: 'Source Sans Pro', sans-serif;
+settings[google_font_css] = font-family: "Source Sans Pro", sans-serif;
