@@ -1,0 +1,10 @@
+.block {
+  .l-main &,
+  .l-footer & {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -7,7 +7,7 @@
 
     &:before {
       color: $primary-link-color;
-      margin-right: 0.8rem;
+      margin-right: 0.7rem;
     }
 
     &.active:before {
@@ -30,6 +30,18 @@
   .l-main &,
   .l-footer & {
     @extend %menu-vertical;
+  }
+}
+
+.l-region--sidebar .block--menu-block {
+  .block__title {
+    &:after {
+      @include icon($fa-var-bars);
+      float: right;
+      margin-left: 0.8rem;
+      position: relative;
+      top: 2px;
+    }
   }
 }
 
