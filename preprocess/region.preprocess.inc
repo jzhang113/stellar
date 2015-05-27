@@ -16,5 +16,8 @@ function stellar_preprocess_region(&$variables) {
       // Add role="main" to the main-content region.
       $variables['attributes_array']['role'] = 'main';
       break;
+
+    case 'footer':
+      $variables['classes_array'][] = 'clearfix';
   }
 }

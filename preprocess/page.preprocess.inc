@@ -28,4 +28,16 @@ function stellar_preprocess_page(&$variables) {
   $variables['page']['header']['attributes_array']['role'] = 'banner';
   $variables['page']['header']['attributes_array']['class'] = implode(" ", $variables['page']['header']['classes_array']);
   $variables['header_attributes'] = drupal_attributes($variables['page']['header']['attributes_array']);
+
+  // Footer block grid def.
+  foreach ($variables['page']['footer'] as $key => &$block) {
+    if (isset($block['#block']) && $key != '#region') {
+      $classes = array();
+      $classes[] = 'floatspan4';
+      if (!is_float($block['#weight']/3)) {
+        $classes[] = 'clear';
+      }
+      $block['#wrapper_classes'] = $classes;
+    }
+  }
 }
