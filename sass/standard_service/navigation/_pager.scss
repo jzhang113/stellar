@@ -1,0 +1,14 @@
+.pager {
+
+  @include breakpoint($bp-mobile-only) {
+    .pager__item {
+      display: none;
+    }
+
+    .pager__item--previous,
+    .pager__item--current,
+    .pager__item--next {
+      @include inline-block;
+    }
+  }
+}

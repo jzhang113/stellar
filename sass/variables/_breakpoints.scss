@@ -1,0 +1,16 @@
+$vert-spacing-unit: 40px;
+$horz-spacing-unit: 1em;
+$page-max-width: 1200px;
+
+$bp-responsive-nav: 40em;
+$bp-mobile: 500px;
+$bp-tablet: 750px;
+$bp-desktop: 1000px;
+$bp-desktop-large: $page-max-width;
+
+
+$bp-mobile-only: max-width ($bp-mobile - 1px); // 0 - 499
+$bp-tablet-portrait-only: $bp-mobile ($bp-tablet - 1px); // 500 - 699
+$bp-tablet-landscape-only: $bp-tablet ($bp-desktop - 1px); // 700 - 949
+$bp-tablet-only: $bp-mobile ($bp-desktop - 1px); // 500 -949
+$bp-desktop-only: $bp-desktop ($bp-desktop-large - 1px); // 950 - 1249

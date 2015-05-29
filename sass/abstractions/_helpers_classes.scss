@@ -11,3 +11,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// STANDARD STUFF
+%simple-list {
+  .item-list ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin-bottom: .8rem;
+      padding-bottom: .8rem;
+      border-bottom: 1px dotted #ddd;
+    }
+  }
+}
+
+.more-link a, %views-read-more,
+%btn-filled {
+  @include button;
+}
+
+%element-invisible {
+  @include element-invisible;
+}
+
+// END STANDARD STUFF

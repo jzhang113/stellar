@@ -5,6 +5,7 @@
 @import "toolkit";
 @import "font-awesome-compass";
 @import "font-awesome";
+@import "rgbapng";
 
 // Import variables, abstractions, base styles and components using globbing.
 //
@@ -22,3 +23,5 @@
 @import "abstractions/**/*";
 @import "base/**/*";
 @import "components/**/*";
+@import "layouts/**/*";
+@import "standard_service/**/*";

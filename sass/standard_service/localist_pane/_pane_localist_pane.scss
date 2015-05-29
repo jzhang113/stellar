@@ -1,0 +1,80 @@
+.pane-localist-pane {
+
+  // ul
+  #lwe {
+    margin: 0;
+    padding: 0;
+  }
+
+  // li
+  .lwe {
+    @include clearfix;
+    list-style: none;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 4px solid #eee;
+  }
+
+  // Date and title
+  .lwn {
+    // Date
+    .lwn0 {
+      display: block;
+      margin-bottom: .3em;
+
+      &:before {
+        @include icon($fa-var-calendar);
+        @extend %event-glyphs;
+      }
+    }
+
+    // Title
+    a {
+      display: block;
+      margin-bottom: .3em;
+      @include font-size(2.4);
+      font-weight: bold;
+    }
+  }
+
+  // Image
+  .lwi1,
+  .lwi0 {
+    display: block;
+    line-height: 0;
+
+    a {
+      @include inline-block;
+      float: right;
+      margin: 0 0 1em 1em;
+      border-color: transparent;
+    }
+  }
+
+  // Image and description
+  .lwd {
+    // Image
+    .lwi0 {}
+    // Description
+    .description {}
+  }
+
+  // Location wrapper
+  .lwl {
+    // Label
+    .lwl0 {
+      margin-right: .5em;
+
+      &:before {
+        @include icon($fa-var-map-marker);
+        @extend %event-glyphs;
+        text-indent: 0;
+      }
+    }
+
+    // Location
+    a {
+
+    }
+  }
+}

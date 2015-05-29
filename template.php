@@ -2,8 +2,7 @@
 
 /**
  * @file
- * Template overrides as well as (pre-)process and alter hooks for the
- * stellar theme.
+ * Stellar theme template overrides as well as (pre-)process and alter hooks.
  */
 
 /**
@@ -73,4 +72,36 @@ function stellar_omega_theme_libraries_info() {
   );
 
   return $libraries;
+}
+
+/**
+ * Implements hook_preprocess_views_view_unformatted().
+ */
+function stellar_preprocess_views_view_unformatted(&$variables) {
+
+  // Apply float spans to views-grids views.
+  $view_classes = $variables['view']->display_handler->options['css_class'];
+  if (!empty($view_classes)) {
+    // There might be multiple classes defined in the view.
+    $view_classes = explode(' ', $view_classes);
+    if (in_array('views-grid', $view_classes)) {
+      // Apply floatspan and grid classes to each row.
+      foreach ($variables['classes'] as $delta => &$row) {
+        $row_count = $delta + 1;
+        // Grid of 12, so 4 spans of 3.
+        $row[] = 'floatspan3';
+        // First of row.
+        if ($row_count % 4 == 1) {
+          $row[] = 'grid-first';
+        }
+        // Last of row.
+        elseif ($row_count % 4 == 0) {
+          $row[] = 'grid-last';
+        }
+        // Also apply classes to classes_array[].
+        $variables['classes_array'][$delta] = implode(' ', $row);
+      }
+    }
+  }
+
 }

@@ -1,0 +1,96 @@
+.l-footer {
+  position: relative;
+
+@include add-grid(12);
+@include add-gutter(1/2);
+@include add-grid(7 5 at $bp-tablet);
+
+  .sitenow-footer-info {
+    a {
+      text-decoration: underline;
+      @include transition(color, 300ms);
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #ccc;
+        text-decoration: none;
+      }
+    }
+  }
+
+  #ui-global-footer {
+    background: transparent;
+    border: none;
+    @include box-shadow(0 0 0 #fff);
+    padding: 0;
+    margin: 2em 0;
+
+    ul {
+    padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+      margin: .5em 0;
+      padding: 0;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    .l-container {
+      width: 100%;
+    }
+  }
+
+  .hawkid-login {
+    @include font-size(1.4);
+    text-transform: uppercase;
+
+    &:before {
+      @include icon($fa-var-key);
+      margin-right: .3em;
+    }
+  }
+
+  @include breakpoint($bp-tablet) {
+
+    .sitenow-footer-info {
+      @include grid-span(1, 1);
+    }
+
+    #sitenow-footer-menu {
+      @include grid-span(1, 2);
+      text-align: right;
+
+      li {
+        @include inline-block;
+        margin: 0 .5em;
+      }
+    }
+
+    #ui-global-footer,
+    .hawkid-login {
+      @include isolation-span(2, 1, 'both');
+    }
+
+    #ui-global-footer {
+      ul {
+        margin: .3em 0 0;
+
+        li {
+          @include inline-block;
+          margin-right: .5em;
+
+          &:after {
+            content: "/";
+            margin-left: .5em;
+          }
+        }
+      }
+    }
+  }
+}
+

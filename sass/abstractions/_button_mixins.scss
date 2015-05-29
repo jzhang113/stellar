@@ -6,6 +6,9 @@
   color: $color;
   padding: 0.8rem;
   border: 1px solid darken($bg-color, 3);
+  &:hover {
+    color: $color;
+  }
 }
 
 .btn {

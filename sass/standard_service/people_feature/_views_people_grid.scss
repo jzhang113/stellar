@@ -1,0 +1,31 @@
+.view-display-id-people_grid {
+
+  .view-content {
+    @include pie-clearfix;
+  }
+
+  .views-row {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 4px solid #eee;
+  }
+
+  .views-field {
+    margin-bottom: .3em;
+  }
+
+  .views-field-title {
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    a {
+      @include font-size(2.4);
+    }
+  }
+
+  .views-field-field-person-image {
+    line-height: 0;
+  }
+}

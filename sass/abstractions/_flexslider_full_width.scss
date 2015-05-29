@@ -1,0 +1,21 @@
+// STANDARD SERVICE
+@mixin flexslider_title_overlay {
+  .flexslider {
+
+    .flex-caption{
+      position: absolute;
+      bottom: 0;
+      @include rgba-background(rgba(0,0,0,0.75));
+    }
+
+    .views-field-slideshow-link {
+      @include inline-block;
+      float: right;
+
+      a {
+        margin: 0;
+      }
+    }
+  }
+}
+// END STANDARD SERVICE

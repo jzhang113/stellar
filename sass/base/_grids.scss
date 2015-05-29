@@ -15,13 +15,41 @@ $grids: 12;
   }
 }
 
+// Float span grid def. grids of 4.
+.floatspan3 {
+  @include breakpoint(900px) {
+    @include float-span(3);
+
+    &.grid-last {
+      @include float-span(3, 'last');
+    }
+    &.grid-first {
+      @include float-span(3, 'first');
+    }
+  }
+}
+
 // Float span grid def. grids of 3.
 .floatspan4 {
   @include breakpoint(900px) {
     @include float-span(4);
 
-    &.clear {
+    &.grid-last {
       @include float-span(4, 'last');
     }
+    &.grid-first {
+      @include float-span(4, 'first');
+    }
   }
+}
+
+
+.clear-left {
+  clear: left;
+}
+.clear-right {
+  clear: right;
+}
+.clear {
+  clear: both;
 }

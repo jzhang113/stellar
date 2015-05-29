@@ -1,0 +1,12 @@
+.view-display-id-articles_grid {
+
+  @extend .view-display-id-articles_teaser;
+
+  .view-content {
+    @include pie-clearfix;
+  }
+
+  .views-row {
+    margin-bottom: 1em;
+  }
+}

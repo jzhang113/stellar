@@ -1,0 +1,7 @@
+.section-articles {
+  .pane-articles-articles-teaser {
+    .pane-title {
+      @include element-invisible;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.flexslider {
+  margin: 0;
+  border-left: none;
+  border-right: none;
+  @include border-radius(0);
+  @include box-shadow(none);
+  background: #fff;
+
+  .slides img {}
+}
+
+.flexslider {
+  display: block;
+  margin-bottom: 40px;
+  //background: #222222;
+
+  .flex-caption {
+    width: 100%;
+    padding: 1em;
+    background: #222;
+    color: #fff;
+    @include clearfix;
+  }
+
+  .views-field-slideshow-title {
+    font-weight: bold;
+  }
+
+  .views-field-slideshow-description {
+  }
+
+  .views-field-slideshow-link {
+    display: block;
+
+    a {
+      @include button;
+      display: block;
+      float: left;
+      margin: 1em 0 0;
+    }
+  }
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+@include breakpoint($bp-desktop-large) {
+  @include flexslider_title_overlay;
+}
+
+// Paging Controls
+.flex-control-paging {
+  text-align: left;
+  bottom: -35px;
+
+  li {
+    margin: 0 .2em 0 0;
+
+    a {
+      background: #777;
+      border: 2px solid #777;
+      width: 10px;
+      height: 10px;
+      @include box-shadow(0 0 0 #fff);
+    }
+
+    a.flex-active {
+      background: transparent;
+    }
+  }
+}
+
+// Directional Controls :: Arrows
+.flexslider {
+  .flex-direction-nav a {
+    display: block;
+    top: auto;
+    bottom: -22px;
+    @include opacity(1);
+
+    &.flex-prev,
+    &.flex-next {
+      background-image: none;
+      text-indent: 0;
+      height: auto;
+      width: auto;
+      @include font-size(0);
+      right: auto;
+      left: auto;
+
+      &:before {
+        @include font-size(1.2);
+        color: #777;
+      }
+    }
+
+    &.flex-prev {
+      right: 45px;
+
+      &:before {
+        @include icon($fa-var-backward);
+        @include font-size(1.3);
+      }
+    }
+
+    &.flex-next {
+      right: 0px;
+
+      &:before {
+        @include icon($fa-var-forward);
+        @include font-size(1.3);
+      }
+    }
+  }
+
+
+  &:hover {
+    .flex-prev {}
+
+    .flex-next {}
+  }
+
+  // Play Pause Controls
+  .flex-pauseplay {
+
+    a {
+      bottom: -24px;
+      left: auto;
+      right: 17px;
+      opacity: 1;
+      text-align: center;
+
+      &:hover,
+      &:focus,
+      &:active {
+      }
+    }
+
+    a.flex-pause:before {
+      @include icon($fa-var-pause);
+      color: #777;
+      @include font-size(1.2);
+    }
+
+    a.flex-play:before {
+      @include icon($fa-var-play);
+      color: #777;
+      @include font-size(1.2);
+    }
+  }
+}

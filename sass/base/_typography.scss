@@ -19,7 +19,7 @@ ol, ul { }
 a { }
 blockquote { }
 pre, code { }
-small { }
+small { @include font-size(1.4) }
 
 a {
   @include transition(all .3s ease-out);

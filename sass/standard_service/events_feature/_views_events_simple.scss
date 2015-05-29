@@ -1,0 +1,7 @@
+.view-display-id-events_simple {
+  @extend %simple-list;
+
+  .views-field-field-event-date {
+    @extend %label-above;
+  }
+}

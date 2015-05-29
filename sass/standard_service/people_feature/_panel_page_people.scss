@@ -1,0 +1,7 @@
+.page-people {
+  .pane-people-people-grid {
+    .pane-title {
+      @include element-invisible;
+    }
+  }
+}

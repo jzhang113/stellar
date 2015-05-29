@@ -1,0 +1,41 @@
+.node-type-people .node-full {
+
+  .node__content {
+    @include pie-clearfix;
+  }
+
+  > h2 {
+    font-weight: bold;
+    @include font-size(2.6);
+    margin-bottom: .5em;
+  }
+
+  .field--label-above {
+    margin-top: .75em;
+  }
+
+  // Photo Field
+  .field--name-field-person-image {
+    line-height: 0;
+    margin-bottom: 1em;
+  }
+
+  // Position Field
+  .field--name-field-person-position {
+    .field__items {
+      @include font-size(2.2);
+      font-style: italic;
+    }
+  }
+
+  // Email Field
+  .field--name-field-person-email {
+    margin-bottom: .5em;
+  }
+
+  // Body/Bio Field
+  .field--name-field-person-bio {
+    margin-top: 1em;
+  }
+}
+

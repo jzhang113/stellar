@@ -1,0 +1,7 @@
+.page-events {
+  .pane-events-events-teaser {
+    .pane-title {
+      @include element-invisible;
+    }
+  }
+}
