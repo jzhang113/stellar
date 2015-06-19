@@ -17,24 +17,24 @@
       <?php print $content['header']; ?>
     </div>
   </div>
-  
+
   <div class="moscone-flipped-container moscone-flipped-column-content clearfix">
-    <div class="moscone-flipped-column-content-region moscone-flipped-content panel-panel">
+    <div class="moscone-flipped-column-content-region moscone-flipped-content panel-panel span8-1">
       <div class="moscone-flipped-column-content-region-inner moscone-flipped-content-inner panel-panel-inner">
         <?php print $content['contentmain']; ?>
       </div>
     </div>
-    <div class="moscone-flipped-column-content-region moscone-flipped-sidebar panel-panel">
+    <div class="moscone-flipped-column-content-region moscone-flipped-sidebar panel-panel span4-9">
       <div class="moscone-flipped-column-content-region-inner moscone-flipped-sidebar-inner panel-panel-inner">
         <?php print $content['sidebar']; ?>
       </div>
     </div>
   </div>
-  
+
   <div class="moscone-container moscone-header clearfix panel-panel">
     <div class="moscone-container-inner moscone-header-inner panel-panel-inner">
       <?php print $content['footer']; ?>
     </div>
   </div>
-  
+
 </div><!-- /.moscone-flipped -->

@@ -17,18 +17,18 @@
       <?php print $content['header']; ?>
     </div>
   </div>
-  
+
   <div class="brenham-container brenham-column-content clearfix">
-    <div class="brenham-column-content-region brenham-sidebar panel-panel">
+    <div class="brenham-column-content-region brenham-sidebar panel-panel span4-1">
       <div class="brenham-column-content-region-inner brenham-sidebar-inner panel-panel-inner">
         <?php print $content['sidebar']; ?>
       </div>
     </div>
-    <div class="brenham-column-content-region brenham-content panel-panel">
+    <div class="brenham-column-content-region brenham-content panel-panel span8-5">
       <div class="brenham-column-content-region-inner brenham-content-inner panel-panel-inner">
         <?php print $content['contentmain']; ?>
       </div>
     </div>
   </div>
-  
+
 </div><!-- /.brenham -->

@@ -3,32 +3,19 @@
  * OA Phelan panel layout
 **/
 
-.phelan-container {
+.panels-dnd .phelan-container {
   margin-bottom: 1em;
 }
 
-.phelan-column {
+.panels-dnd .phelan-column {
   width: 51.064%;
   float: left;
 }
 
-.phelan-column1-inner {
+.panels-dnd .phelan-column1-inner {
   margin-right: 20px;
 }
 
-.phelan-column2 {
+.panels-dnd .phelan-column2 {
   width: 48.936%;
-}
-  
-/* iPhone [portrait + landscape] */
-@media only screen and (max-width: 480px) {
-  .phelan-column,
-  .phelan-column2 {
-    width: 100%;
-    float: none;
-  }
-  
-  .phelan-column1-inner {
-    margin-right: 0;
-  }
 }

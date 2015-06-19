@@ -17,19 +17,19 @@
       <?php print $content['header']; ?>
     </div>
   </div>
-  
+
   <div class="melon-container melon-column-content clearfix">
-    
-    <div class="melon-content-container">
+
+    <div class="melon-content-container span8-1">
       <div class="melon-content-container-inner">
-        
+
         <div class="melon-content-container-column-container clearfix">
-          <div class="melon-column-content-region melon-content-column1 melon-column panel-panel">
+          <div class="melon-column-content-region melon-content-column1 melon-column panel-panel span6-1">
             <div class="melon-column-content-region-inner melon-content-column1-inner melon-column-inner panel-panel-inner">
               <?php print $content['contentcolumn1']; ?>
             </div>
           </div>
-          <div class="melon-column-content-region melon-content-column2 melon-column panel-panel">
+          <div class="melon-column-content-region melon-content-column2 melon-column panel-panel span6-7">
             <div class="melon-column-content-region-inner melon-content-column2-inner melon-column-inner panel-panel-inner">
               <?php print $content['contentcolumn2']; ?>
             </div>
@@ -41,16 +41,16 @@
             <?php print $content['contentheader']; ?>
           </div>
         </div>
-      
+
       </div>
     </div><!-- /.melon-content-container -->
-    
-    <div class="melon-sidebar melon-column-content-region melon-column panel-panel">
+
+    <div class="melon-sidebar melon-column-content-region melon-column panel-panel span4-9">
       <div class="melon-sidebar-inner melon-column-content-region-inner melon-column-inner panel-panel-inner">
         <?php print $content['sidebar']; ?>
       </div>
     </div>
-    
+
   </div><!-- /.melon-column-content -->
-  
+
 </div><!-- /.melon -->

@@ -17,24 +17,24 @@
       <?php print $content['header']; ?>
     </div>
   </div>
-  
+
   <div class="sutro-container sutro-column-content clearfix">
-    <div class="sutro-column-content-region sutro-column1 sutro-column panel-panel">
+    <div class="sutro-column-content-region sutro-column1 sutro-column panel-panel span6-1">
       <div class="sutro-column-content-region-inner sutro-column1-inner sutro-column-inner panel-panel-inner">
         <?php print $content['column1']; ?>
       </div>
     </div>
-    <div class="sutro-column-content-region sutro-column2 sutro-column panel-panel">
+    <div class="sutro-column-content-region sutro-column2 sutro-column panel-panel span6-7">
       <div class="sutro-column-content-region-inner sutro-column2-inner sutro-column-inner panel-panel-inner">
         <?php print $content['column2']; ?>
       </div>
     </div>
   </div>
-  
+
   <div class="sutro-container sutro-footer clearfix panel-panel">
     <div class="sutro-container-inner sutro-footer-inner panel-panel-inner">
       <?php print $content['footer']; ?>
     </div>
   </div>
-  
+
 </div><!-- /.sutro -->

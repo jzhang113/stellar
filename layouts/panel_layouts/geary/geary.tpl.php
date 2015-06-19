@@ -17,23 +17,23 @@
       <?php print $content['header']; ?>
     </div>
   </div>
-  
+
   <div class="geary-container geary-column-content clearfix">
-    <div class="geary-column-content-region geary-column1 panel-panel">
+    <div class="geary-column-content-region geary-column1 panel-panel span4-1">
       <div class="geary-column-content-region-inner geary-column1-inner panel-panel-inner">
         <?php print $content['column1']; ?>
       </div>
     </div>
-    <div class="geary-column-content-region geary-column2 panel-panel">
+    <div class="geary-column-content-region geary-column2 panel-panel span4-5">
       <div class="geary-column-content-region-inner geary-column2-inner panel-panel-inner">
         <?php print $content['column2']; ?>
       </div>
     </div>
-    <div class="geary-column-content-region geary-column3 panel-panel">
+    <div class="geary-column-content-region geary-column3 panel-panel span4-9">
       <div class="geary-column-content-region-inner geary-column3-inner panel-panel-inner">
         <?php print $content['column3']; ?>
       </div>
     </div>
   </div>
-  
+
 </div><!-- /.geary -->

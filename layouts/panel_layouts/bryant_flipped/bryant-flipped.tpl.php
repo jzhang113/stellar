@@ -13,16 +13,16 @@
 <div class="panel-display bryant-flipped clearfix <?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
 
   <div class="bryant-flipped-container bryant-flipped-content-container clearfix">
-    <div class="bryant-flipped-content bryant-flipped-content-region panel-panel">
+    <div class="bryant-flipped-content bryant-flipped-content-region panel-panel span9-1">
       <div class="bryant-flipped-content-inner bryant-flipped-content-region-inner panel-panel-inner">
         <?php print $content['contentmain']; ?>
       </div>
     </div>
-    <div class="bryant-flipped-sidebar bryant-flipped-content-region panel-panel">
+    <div class="bryant-flipped-sidebar bryant-flipped-content-region panel-panel span3-10">
       <div class="bryant-flipped-sidebar-inner bryant-flipped-content-region-inner panel-panel-inner">
         <?php print $content['sidebar']; ?>
       </div>
     </div>
   </div>
-    
+
 </div><!-- /.bryant-flipped -->

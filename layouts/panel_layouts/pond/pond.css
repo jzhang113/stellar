@@ -3,35 +3,21 @@
  * OA Pond panel layout
 **/
 
-.pond-container {
+.panels-dnd .pond-container {
   margin-bottom: 1em;
 }
 
-.pond-column {
+.panels-dnd .pond-column {
   width: 34.043%;
   float: left;
 }
 
-  .pond-column-inner {
-    margin-right: 20px;
-  }
+.panels-dnd .pond-column-inner {
+  margin-right: 20px;
+}
 
-  .pond-column3,
-  .pond-secondary-column3 {
-    width: 31.915%;
-    margin-right: 0;
-  }
-  
-/* iPhone [portrait + landscape] */
-@media only screen and (max-width: 480px) {
-  .pond-column,
-  .pond-column3,
-  .pond-secondary-column3 {
-    width: 100%;
-    float: none;
-  }
-  
-  .pond-column-inner  {
-    margin-right: 0;
-  }
+.panels-dnd .pond-column3,
+.panels-dnd .pond-secondary-column3 {
+  width: 31.915%;
+  margin-right: 0;
 }

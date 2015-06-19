@@ -17,40 +17,40 @@
       <?php print $content['header']; ?>
     </div>
   </div>
-  
+
   <div class="webb-flipped-container webb-flipped-column-content clearfix">
-    
-    <div class="webb-flipped-content-container">
+
+    <div class="webb-flipped-content-container span8-1">
       <div class="webb-flipped-content-container-inner">
-      
+
         <div class="webb-flipped-column-content-region webb-flipped-content-header panel-panel">
           <div class="webb-flipped-column-content-region-inner webb-flipped-content-header-inner panel-panel-inner">
             <?php print $content['contentheader']; ?>
           </div>
         </div>
-        
+
         <div class="webb-flipped-content-container-column-container clearfix">
-          <div class="webb-flipped-column-content-region webb-flipped-content-column1 webb-flipped-column panel-panel">
+          <div class="webb-flipped-column-content-region webb-flipped-content-column1 webb-flipped-column panel-panel span6-1">
             <div class="webb-flipped-column-content-region-inner webb-flipped-content-column1-inner webb-flipped-column-inner panel-panel-inner">
               <?php print $content['contentcolumn1']; ?>
             </div>
           </div>
-          <div class="webb-flipped-column-content-region webb-flipped-content-column2 webb-flipped-column panel-panel">
+          <div class="webb-flipped-column-content-region webb-flipped-content-column2 webb-flipped-column panel-panel span6-7">
             <div class="webb-flipped-column-content-region-inner webb-flipped-content-column2-inner webb-flipped-column-inner panel-panel-inner">
               <?php print $content['contentcolumn2']; ?>
             </div>
           </div>
         </div><!-- /.webb-flipped-content-container-column-container -->
-      
+
       </div>
     </div><!-- /.webb-flipped-content-container -->
-    
-    <div class="webb-flipped-sidebar webb-flipped-column-content-region webb-flipped-column panel-panel">
+
+    <div class="webb-flipped-sidebar webb-flipped-column-content-region webb-flipped-column panel-panel span4-9">
       <div class="webb-flipped-sidebar-inner webb-flipped-column-content-region-inner webb-flipped-column-inner panel-panel-inner">
         <?php print $content['sidebar']; ?>
       </div>
     </div>
-    
+
   </div><!-- /.webb-flipped-column-content -->
-  
+
 </div><!-- /.webb-flipped -->

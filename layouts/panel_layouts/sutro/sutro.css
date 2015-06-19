@@ -3,36 +3,23 @@
  * OA Sutro panel layout
 **/
 
-.sutro-container {
+.panels-dnd .sutro-container {
   margin-bottom: 1em;
 }
 
-.sutro-column {
+.panels-dnd .sutro-column {
   width: 51.064%;
   float: left;
 }
 
-  .sutro-column-inner {
-    margin-right: 20px;
-  }
+.panels-dnd .sutro-column-inner {
+  margin-right: 20px;
+}
 
-  .sutro-column2 {
-    width: 48.936%;
-  }
-  
-    .sutro-column2-inner {
-      margin-right: 0;
-    }
-    
-/* iPhone [portrait + landscape] */
-@media only screen and (max-width: 480px) {
-  .sutro-column,
-  .sutro-column2 {
-    width: 100%;
-    float: none;
-  }
-  
-  .sutro-column-inner {
-    margin-right: 0;
-  }
+.panels-dnd .sutro-column2 {
+  width: 48.936%;
+}
+
+.panels-dnd .sutro-column2-inner {
+  margin-right: 0;
 }

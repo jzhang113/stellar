@@ -17,47 +17,47 @@
       <?php print $content['header']; ?>
     </div>
   </div>
-  
+
   <div class="pond-container pond-column-content pond-column-content-row1 clearfix">
-    <div class="pond-column-content-region pond-column pond-column1 panel-panel">
+    <div class="pond-column-content-region pond-column pond-column1 panel-panel span4-1">
       <div class="pond-column-content-region-inner pond-column-inner pond-column1-inner panel-panel-inner">
         <?php print $content['column1']; ?>
       </div>
     </div>
-    <div class="pond-column-content-region pond-column pond-column2 panel-panel">
+    <div class="pond-column-content-region pond-column pond-column2 panel-panel span4-5">
       <div class="pond-column-content-region-inner pond-column-inner pond-column2-inner panel-panel-inner">
         <?php print $content['column2']; ?>
       </div>
     </div>
-    <div class="pond-column-content-region pond-column pond-column3 panel-panel">
+    <div class="pond-column-content-region pond-column pond-column3 panel-panel span4-9">
       <div class="pond-column-content-region-inner pond-column-inner pond-column3-inner panel-panel-inner">
         <?php print $content['column3']; ?>
       </div>
     </div>
   </div>
-  
+
   <div class="pond-container pond-secondary-column-content pond-column-content-row2 clearfix">
-    <div class="pond-secondary-column-content-region pond-column pond-secondary-column1 panel-panel">
+    <div class="pond-secondary-column-content-region pond-column pond-secondary-column1 panel-panel span4-1">
       <div class="pond-secondary-column-content-region-inner pond-column-inner pond-secondary-column1-inner panel-panel-inner">
         <?php print $content['secondarycolumn1']; ?>
       </div>
     </div>
-    <div class="pond-secondary-column-content-region pond-column pond-secondary-column2 panel-panel">
+    <div class="pond-secondary-column-content-region pond-column pond-secondary-column2 panel-panel span4-5">
       <div class="pond-secondary-column-content-region-inner pond-column-inner pond-secondary-column2-inner panel-panel-inner">
         <?php print $content['secondarycolumn2']; ?>
       </div>
     </div>
-    <div class="pond-secondary-column-content-region pond-column pond-secondary-column3 panel-panel">
+    <div class="pond-secondary-column-content-region pond-column pond-secondary-column3 panel-panel span4-9">
       <div class="pond-secondary-column-content-region-inner pond-column-inner pond-secondary-column3-inner panel-panel-inner">
         <?php print $content['secondarycolumn3']; ?>
       </div>
     </div>
   </div>
-  
+
   <div class="pond-container pond-footer clearfix panel-panel">
     <div class="pond-container-inner pond-footer-inner panel-panel-inner">
       <?php print $content['footer']; ?>
     </div>
   </div>
-  
+
 </div><!-- /.pond -->
