@@ -3,7 +3,7 @@
 /**
  * Implements hook_preprocess_page().
  */
-function stellar_preprocess_page(&$variables) {
+function itsecurity_preprocess_page(&$variables) {
   // Set the sidebar position.
   if (omega_extension_enabled('layouts')) {
     $sidebar_pos = omega_theme_get_setting('omega_sidebar');

@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Theme settings file for the stellar theme.
+ * Theme settings file for the itsecurity theme.
  */
 
 require_once dirname(__FILE__) . '/template.php';
@@ -10,7 +10,7 @@ require_once dirname(__FILE__) . '/template.php';
 /**
  * Implements hook_form_FORM_alter().
  */
-function stellar_form_system_theme_settings_alter(&$form, $form_state) {
+function itsecurity_form_system_theme_settings_alter(&$form, $form_state) {
   // Unset omega_layout options.
   $unset_layouts = array('simple', 'off-canvas', 'divine', 'hero');
   foreach ($unset_layouts as $layout) {
