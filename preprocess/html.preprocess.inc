@@ -17,4 +17,11 @@ function stellar_preprocess_html(&$variables) {
   else {
     $variables['classes_array'][] = 'no_sidebars';
   }
+
+  // Add sticky navigation class.
+  if (omega_extension_enabled('layouts')) {
+    if (omega_theme_get_setting('omega_sticky_navigation') == 1) {
+      $variables['classes_array'][] = 'nav-is-sticky';
+    }
+  }
 }
