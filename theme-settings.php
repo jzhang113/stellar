@@ -34,4 +34,10 @@ function stellar_form_system_theme_settings_alter(&$form, $form_state) {
     '#description' => t('Select whether the sidebar region is rendered in the first or second position.'),
     '#default_value' => omega_theme_get_setting('omega_sidebar', FALSE),
   );
+  $form['omega']['layouts']['settings']['omega_sticky_navigation'] = array(
+    '#type' => 'checkbox',
+    '#default_value' => omega_theme_get_setting('omega_sticky_navigation', 0),
+    '#title' => t('Enable Sticky Navigation'),
+    '#return_value' => 1,
+  );
 }
