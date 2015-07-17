@@ -42,3 +42,10 @@ $hover-top: 66px; // Set the position of the top dropdown
 $fa-icon: true; // Use fa icons instead of default
 $fa-icon-down-positon: -1px; // Relatively position arrow right
 $fa-icon-right-positon: 0px; // Relatively position arrow down
+
+// Sticky nav variables.
+$uiowa-bar-height: 41px;
+$nav-wrapper-height: 92px;
+$nav-is-sticky: $page-max-width;
+$toolbar-height: 30px;
+$toolbar-drawer-height: 34px;

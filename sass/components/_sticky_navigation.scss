@@ -1,0 +1,40 @@
+.nav-is-sticky {
+  .l-page {
+
+    @include breakpoint($nav-is-sticky) {
+      margin-top: $uiowa-bar-height + $nav-wrapper-height;
+    }
+  }
+
+  .l-navigation {
+    @include breakpoint($nav-is-sticky) {
+      position: fixed;
+      top: $uiowa-bar-height;
+      width: 100%;
+
+      .toolbar & {
+        top: $uiowa-bar-height + $toolbar-height;
+      }
+
+      .toolbar.toolbar-drawer & {
+        top: $uiowa-bar-height + $toolbar-height + $toolbar-drawer-height;
+      }
+    }
+  }
+
+  #ui-wrapper {
+     @include breakpoint($nav-is-sticky) {
+      position: fixed;
+      top: 0;
+      width: 100%;
+
+      .toolbar & {
+        top: $toolbar-height;
+      }
+
+      .toolbar.toolbar-drawer & {
+        top: $toolbar-height + $toolbar-drawer-height;
+      }
+    }
+  }
+}
