@@ -4,7 +4,7 @@ table {
     padding: 1rem;
   }
 
-  tr:even {
+  tr:nth-child(2n) {
     background-color: $table-rows-bg-color;
   }
 

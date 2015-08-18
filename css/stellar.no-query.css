@@ -2681,7 +2681,7 @@ table th {
   background-color: gainsboro;
   padding: 1rem;
 }
-table tr:even {
+table tr:nth-child(2n) {
   background-color: #f5f5f5;
 }
 table td {
