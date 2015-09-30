@@ -1,0 +1,92 @@
+diff --git a/preprocess/html.preprocess.inc b/preprocess/html.preprocess.inc
+index 88acd86..f4172c4 100644
+--- a/preprocess/html.preprocess.inc
++++ b/preprocess/html.preprocess.inc
+@@ -17,4 +17,11 @@ function stellar_preprocess_html(&$variables) {
+   else {
+     $variables['classes_array'][] = 'no_sidebars';
+   }
++
++  // Add sticky navigation class.
++  if (omega_extension_enabled('layouts')) {
++    if (omega_theme_get_setting('omega_sticky_navigation') == 1) {
++      $variables['classes_array'][] = 'nav-is-sticky';
++    }
++  }
+ }
+diff --git a/sass/components/_sticky_navigation.scss b/sass/components/_sticky_navigation.scss
+new file mode 100644
+index 0000000..578de2c
+--- /dev/null
++++ b/sass/components/_sticky_navigation.scss
+@@ -0,0 +1,40 @@
++.nav-is-sticky {
++  .l-page {
++
++    @include breakpoint($nav-is-sticky) {
++      margin-top: $uiowa-bar-height + $nav-wrapper-height;
++    }
++  }
++
++  .l-navigation {
++    @include breakpoint($nav-is-sticky) {
++      position: fixed;
++      top: $uiowa-bar-height;
++      width: 100%;
++
++      .toolbar & {
++        top: $uiowa-bar-height + $toolbar-height;
++      }
++
++      .toolbar.toolbar-drawer & {
++        top: $uiowa-bar-height + $toolbar-height + $toolbar-drawer-height;
++      }
++    }
++  }
++
++  #ui-wrapper {
++     @include breakpoint($nav-is-sticky) {
++      position: fixed;
++      top: 0;
++      width: 100%;
++
++      .toolbar & {
++        top: $toolbar-height;
++      }
++
++      .toolbar.toolbar-drawer & {
++        top: $toolbar-height + $toolbar-drawer-height;
++      }
++    }
++  }
++}
+diff --git a/sass/variables/_app.scss b/sass/variables/_app.scss
+index afc8963..f466fcb 100644
+--- a/sass/variables/_app.scss
++++ b/sass/variables/_app.scss
+@@ -42,3 +42,10 @@ $hover-top: 66px; // Set the position of the top dropdown
+ $fa-icon: true; // Use fa icons instead of default
+ $fa-icon-down-positon: -1px; // Relatively position arrow right
+ $fa-icon-right-positon: 0px; // Relatively position arrow down
++
++// Sticky nav variables.
++$uiowa-bar-height: 41px;
++$nav-wrapper-height: 92px;
++$nav-is-sticky: $page-max-width;
++$toolbar-height: 30px;
++$toolbar-drawer-height: 34px;
+diff --git a/theme-settings.php b/theme-settings.php
+index 6d2e5ca..1d963ab 100644
+--- a/theme-settings.php
++++ b/theme-settings.php
+@@ -34,4 +34,10 @@ function stellar_form_system_theme_settings_alter(&$form, $form_state) {
+     '#description' => t('Select whether the sidebar region is rendered in the first or second position.'),
+     '#default_value' => omega_theme_get_setting('omega_sidebar', FALSE),
+   );
++  $form['omega']['layouts']['settings']['omega_sticky_navigation'] = array(
++    '#type' => 'checkbox',
++    '#default_value' => omega_theme_get_setting('omega_sticky_navigation', 0),
++    '#title' => t('Enable Sticky Navigation'),
++    '#return_value' => 1,
++  );
+ }

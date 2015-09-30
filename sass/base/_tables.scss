@@ -1,0 +1,14 @@
+table {
+  th {
+    background-color: darken($table-rows-bg-color, 10%);
+    padding: 1rem;
+  }
+
+  tr:nth-child(2n) {
+    background-color: $table-rows-bg-color;
+  }
+
+  td {
+    padding: 1rem;
+  }
+}
