@@ -8,16 +8,16 @@
 /**
  * Implements hook_extension_EXTENSION_registry_alter().
  */
-function tier_extension_fonts_theme_registry_alter(&$registry) {
+function stellar_extension_fonts_theme_registry_alter(&$registry) {
   if (omega_theme_get_setting('omega_typekit', TRUE) || omega_theme_get_setting('omega_google_fonts', TRUE)) {
-    $registry['html']['preprocess functions'][] = 'tier_extension_fonts_preprocess_html';
+    $registry['html']['preprocess functions'][] = 'stellar_extension_fonts_preprocess_html';
   }
 }
 
 /**
  * Implements hook_extension_EXTENSION_preproces_html().
  */
-function tier_extension_fonts_preprocess_html(&$variables) {
+function stellar_extension_fonts_preprocess_html(&$variables) {
   // Typekit integration.
   if (omega_extension_enabled('fonts') && omega_theme_get_setting('omega_typekit', TRUE)) {
     $typkit_id = omega_theme_get_setting('typekit_id');

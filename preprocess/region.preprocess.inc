@@ -3,7 +3,7 @@
 /**
  * Implements hook_preprocess_region().
  */
-function tier_preprocess_region(&$variables) {
+function stellar_preprocess_region(&$variables) {
   // Combine wrapper classes with the region classes.
   if (isset($variables['elements']['#wrapper_classes'])) {
     $variables['classes_array'] = array_merge($variables['classes_array'], $variables['elements']['#wrapper_classes']);

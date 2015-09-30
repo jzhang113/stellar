@@ -3,13 +3,13 @@
 /**
  * @file
  * Template overrides as well as (pre-)process and alter hooks for the
- * tier theme.
+ * stellar theme.
  */
 
 /**
  * Implements theme_breadcrumb().
  */
-function tier_breadcrumb(&$variables) {
+function stellar_breadcrumb(&$variables) {
   $output = '';
   if (!empty($variables['breadcrumb'])) {
     $output = '<div id="breadcrumb" class="breadcrumb-container"><h2 class="element-invisible">You are here</h2><ul class="breadcrumb">';
@@ -39,7 +39,7 @@ function tier_breadcrumb(&$variables) {
 /**
  * Implements hook_omega_theme_libraries_info().
  */
-function tier_omega_theme_libraries_info() {
+function stellar_omega_theme_libraries_info() {
   $libraries['rem'] = array(
     'name' => t('REM unit polyfill'),
     'description' => t('A polyfill to parse CSS links and rewrite pixel equivalents into head for non supporting browsers.'),

@@ -8,7 +8,7 @@
 /**
  * Implements hook_extension_EXTENSION_theme_settings_form_alter().
  */
-function tier_extension_fonts_settings_form($element, &$form, $form_state) {
+function stellar_extension_fonts_settings_form($element, &$form, $form_state) {
   $element['omega_typekit'] = array(
     '#type' => 'checkbox',
     '#title' => t('Enable Typkit fonts'),
