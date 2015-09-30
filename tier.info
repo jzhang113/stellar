@@ -1,5 +1,5 @@
-name = Stellar
-description = Stellar SiteNow starterkit theme based on Omega.
+name = tier
+description = tier SiteNow starterkit theme based on Omega.
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
@@ -8,10 +8,10 @@ core = 7.x
 ; ========================================
 ; Stylesheets
 ; ========================================
-stylesheets[all][] = css/stellar.normalize.css
-stylesheets[all][] = css/stellar.hacks.css
-stylesheets[all][] = css/stellar.styles.css
-stylesheets[all][] = css/stellar.no-query.css
+stylesheets[all][] = css/tier.normalize.css
+stylesheets[all][] = css/tier.hacks.css
+stylesheets[all][] = css/tier.styles.css
+stylesheets[all][] = css/tier.no-query.css
 
 ; ========================================
 ; Scripts

@@ -1,11 +1,11 @@
 @media all and (max-width: 800px) {
-  /* line 3, ../sass/stellar.hacks.scss */
+  /* line 3, ../sass/tier.hacks.scss */
   #toolbar, #admin-menu {
     display: none; }
 
-  /* line 8, ../sass/stellar.hacks.scss */
+  /* line 8, ../sass/tier.hacks.scss */
   html body.toolbar, html body.admin-menu {
     padding-top: 0 !important;
     margin-top: 0 !important; } }
 
-/*# sourceMappingURL=stellar.hacks.css.map */
+/*# sourceMappingURL=tier.hacks.css.map */
