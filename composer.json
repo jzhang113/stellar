@@ -1,0 +1,8 @@
+{
+    "name": "its-uofiowa/stellar",
+    "description": "Stellar is a starterkit theme based on the Drupal.org Omega project.",
+    "type": "drupal-theme",
+    "require": {
+      "composer/installers": "*"
+    }
+}
