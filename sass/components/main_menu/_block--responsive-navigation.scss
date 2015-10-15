@@ -1,0 +1,11 @@
+.block--responsive-navigation {
+  @include breakpoint($bp-responsive-nav) {
+    float: right;
+  }
+
+  .responsive-navigation {
+    a {
+      font-weight: bold;
+    }
+  }
+}
