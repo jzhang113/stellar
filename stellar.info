@@ -1,6 +1,6 @@
 name = Stellar
 description = Stellar SiteNow starterkit theme based on Omega.
-base theme = omega
+base theme = sitenow_standard_base
 screenshot = screenshot.png
 engine = phptemplate
 core = 7.x
@@ -29,11 +29,6 @@ regions[help] = Help
 regions[content] = Content
 regions[sidebar] = Sidebar
 regions[footer] = Footer
-
-; ========================================
-; Plugins
-; ========================================
-plugins[panels][layouts] = layouts/panel_layouts
 
 ; ========================================
 ; Settings
