@@ -27,7 +27,7 @@ regions[navigation] = Navigation
 regions[highlighted] = Highlighted
 regions[help] = Help
 regions[content] = Content
-regions[sidebar] = Sidebar
+regions[sidebar_first] = Sidebar
 regions[footer] = Footer
 
 ; ========================================

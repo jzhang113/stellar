@@ -13,13 +13,13 @@ function stellar_preprocess_page(&$variables) {
   }
 
   // Add a grid def. for the main-content region.
-  if (!empty($variables['page']['sidebar']) && $sidebar_pos === 'first') {
+  if (!empty($variables['page']['sidebar_first']) && $sidebar_pos === 'first') {
     $variables['page']['content']['#wrapper_classes'][] =  'span8-5';
-    $variables['page']['sidebar']['#wrapper_classes'][] =  'span4-1';
+    $variables['page']['sidebar_first']['#wrapper_classes'][] =  'span4-1';
   }
-  elseif (!empty($variables['page']['sidebar']) && $sidebar_pos === 'second') {
+  elseif (!empty($variables['page']['sidebar_first']) && $sidebar_pos === 'second') {
     $variables['page']['content']['#wrapper_classes'][] =  'span8-1';
-    $variables['page']['sidebar']['#wrapper_classes'][] =  'span4-9';
+    $variables['page']['sidebar_first']['#wrapper_classes'][] =  'span4-9';
   }
 
   // Create attributes for the header region.

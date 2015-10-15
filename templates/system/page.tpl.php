@@ -133,7 +133,7 @@
 
       <?php print render($tabs); ?>
       <?php print render($page['content']); ?>
-      <?php print render($page['sidebar']); ?>
+      <?php print render($page['sidebar_first']); ?>
     </div>
   </div>
 
