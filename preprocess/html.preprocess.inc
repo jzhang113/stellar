@@ -12,9 +12,9 @@ function stellar_preprocess_html(&$variables) {
 
   // Add sidebar info.
   if (!empty($variables['page']['sidebar'])) {
-    $variables['classes_array'][] = 'sidebar';
+    $variables['classes_array'][] = 'has-one-sidebar';
   }
   else {
-    $variables['classes_array'][] = 'no_sidebars';
+    $variables['classes_array'][] = 'has-no-sidebars';
   }
 }
