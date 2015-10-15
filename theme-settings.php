@@ -12,7 +12,7 @@ require_once dirname(__FILE__) . '/template.php';
  */
 function stellar_form_system_theme_settings_alter(&$form, $form_state) {
   // Unset omega_layout options.
-  $unset_layouts = array('simple', 'off-canvas', 'divine', 'hero');
+  $unset_layouts = array('simple', 'off-canvas', 'divine', 'hero', 'standard', 'student-org');
   foreach ($unset_layouts as $layout) {
     unset($form['omega']['layouts']['settings']['omega_layout']['#options'][$layout]);
     unset($form['omega']['layouts']['settings']['omega_layout'][$layout]);
@@ -34,4 +34,9 @@ function stellar_form_system_theme_settings_alter(&$form, $form_state) {
     '#description' => t('Select whether the sidebar region is rendered in the first or second position.'),
     '#default_value' => omega_theme_get_setting('omega_sidebar', FALSE),
   );
+
+  // Set access for omega extentions to FALSE.
+  $form['omega']['development']['#access'] = FALSE;
+  $form['omega']['compatibility']['#access'] = FALSE;
+  $form['omega']['assets']['#access'] = FALSE;
 }
