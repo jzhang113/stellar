@@ -1,5 +1,5 @@
 name = Stellar
-description = Stellar SiteNow starterkit theme based on Omega.
+description = This theme is compatible with the <em>SiteNow Background Image</em> app to feature background images at the top of pages.
 base theme = sitenow_standard_base
 screenshot = screenshot.png
 engine = phptemplate
