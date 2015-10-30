@@ -6,6 +6,12 @@
   color: $color;
   padding: 0.8rem;
   border: 1px solid darken($bg-color, 3);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: lighten($bg-color, 5);
+  }
 }
 
 .btn {
