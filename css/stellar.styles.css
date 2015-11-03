@@ -2361,6 +2361,7 @@
 }
 .btn:hover, .btn:focus, .btn:active {
   background: #3a80c9;
+  color: #fff;
 }
 
 @-moz-keyframes breathe {
@@ -2457,6 +2458,7 @@ body {
 .date_repeat_fm-view-all a:focus,
 .date_repeat_fm-view-all a:active {
   background: #3a80c9;
+  color: #fff;
 }
 
 .l-main .block, .l-footer .block {
@@ -3765,6 +3767,7 @@ a.active {
 }
 .view-display-id-promoted_news_pane .views-field-view-node a:hover, .view-display-id-promoted_news_pane .views-field-view-node a:focus, .view-display-id-promoted_news_pane .views-field-view-node a:active {
   background: #3a80c9;
+  color: #fff;
 }
 
 .l-footer {
@@ -4516,6 +4519,7 @@ a.active {
 }
 .flexslider .views-field-slideshow-link a:hover, .flexslider .views-field-slideshow-link a:focus, .flexslider .views-field-slideshow-link a:active {
   background: #3a80c9;
+  color: #fff;
 }
 .flexslider ul {
   margin-bottom: 0;

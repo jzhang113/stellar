@@ -11,6 +11,7 @@
   &:focus,
   &:active {
     background: lighten($bg-color, 5);
+    color: $color;
   }
 }
 
