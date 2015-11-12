@@ -3455,12 +3455,6 @@ ul ul {
   margin-bottom: 0;
 }
 
-img,
-media,
-iframe {
-  max-width: 100%;
-}
-
 .l-main .menu li, .l-footer .menu li,
 .l-main .menu .leaf,
 .l-footer .menu .leaf,
