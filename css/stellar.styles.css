@@ -3461,26 +3461,6 @@ iframe {
   max-width: 100%;
 }
 
-.media-youtube-video {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-
-iframe.media-youtube-player {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-@media (max-width: 640px) {
-  iframe.media-youtube-player {
-    width: 100% !important;
-    height: 100% !important;
-  }
-}
-
 .l-main .menu li, .l-footer .menu li,
 .l-main .menu .leaf,
 .l-footer .menu .leaf,
