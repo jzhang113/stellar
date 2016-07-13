@@ -60,7 +60,7 @@ function stellar_extension_fonts_settings_form($element, &$form, $form_state) {
   $element['google_fonts']['google_font_import'] = array(
     '#type' => 'textfield',
     '#title' => t('@import Code'),
-    '#description' => t('Enter the @import code, Step 3 from Google Fonts Quick Use under the @import tab. For example: <strong>@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,800italic,400,600);</strong>'),
+    '#description' => t('Enter the @import code, Step 3 from Google Fonts Quick Use under the @import tab. For example: <strong>@import url(https://fonts.googleapis.com/css?family=Open+Sans:600italic,800italic,400,600);</strong>'),
     '#default_value' => omega_theme_get_setting('google_font_import', FALSE),
   );
 

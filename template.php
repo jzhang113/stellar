@@ -44,7 +44,7 @@ function stellar_omega_theme_libraries_info() {
     'name' => t('REM unit polyfill'),
     'description' => t('A polyfill to parse CSS links and rewrite pixel equivalents into head for non supporting browsers.'),
     'vendor' => 'Chuck Carpenter',
-    'vendor url' => 'http://chuckcarpenter.github.io/REM-unit-polyfill/',
+    'vendor url' => 'https://chuckcarpenter.github.io/REM-unit-polyfill/',
     'package' => t('Polyfills'),
     'files' => array(
       'js' => array(

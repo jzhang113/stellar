@@ -24,7 +24,7 @@ function stellar_extension_fonts_preprocess_html(&$variables) {
     $typkit_class = omega_theme_get_setting('typekit_class');
     // Include typkit assets.
     if (!empty($typkit_id)) {
-      drupal_add_js('http://use.typekit.net/' . $typkit_id . '.js');
+      drupal_add_js('https://use.typekit.net/' . $typkit_id . '.js');
       drupal_add_js('try{Typekit.load();}catch(e){}', array('type' => 'inline'));
     }
     if (!empty($typkit_class)) {
